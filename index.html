@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./style.css" />
     <title>Giraffe Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <header>
       <nav class="navigation">
@@ -83,7 +90,7 @@
             />
             <h3 class="about-list-item-text">6 років успішної роботи</h3>
           </li>
-          <li>
+          <li class="about-list-item">
             <img
               class="about-list-item-image"
               src="./image/open book.svg"
@@ -330,40 +337,67 @@
         </div>
       </section>
       <section-reviews class="reviews">
-        <p class="reviews-text">Відгуки</p>
+        <p class="reviews-main-text">Відгуки</p>
         <h2 class="reviews-title">Що кажуть про нас</h2>
-        <div class="reviews-container">
-          <button class="revierws-button">
-            <img src="./image/arrow-left.svg" alt="" />
-          </button>
-          <button class="revierws-button">
-            <img src="./image/arrow-right.svg" alt="" />
-          </button>
-          <h3 class="revierws-title">Ольга Березовська</h3>
-          <p class="revierws-text">приватний нотаріус м.Кропивницький</p>
-          <p class="revierws-text">
+        <button class="reviews-button">
+          <img src="./image/arrow-left.svg" alt="" />
+        </button>
+        <button class="reviews-button">
+          <img src="./image/arrow-right.svg" alt="" />
+        </button>
+        <ul class="reviews-list">
+        <li class="reviews-list-item">
+          <h3 class="revierws-tittle">Ольга Березовська</h3>
+          <p class="reviews-text">приватний нотаріус м.Кропивницький</p>
+          <p class="reviews-text-buttom">
             Високий рівень викладання – викладачі прекрасні, професіонали своєї
             справи. Звернулися до Ольги до Жирафа Клаба за рекомендацією. Хочу
             особливо відзначити організованість, дисципліну, чіткість, гарний та
             зручний дизайн офісу. Враження лише позитивні, чудові, результат
             навчання – міжнародний сертифікат у дочки. Рекомендую.
           </p>
-        </div>
+        </li>
+        <li class="reviews-list-item">
+          <h3 class="reviews-title">Олена Кравчук</h3>
+          <p class="reviews-text">батько учня 5-А класу</p>
+          <p class="reviews-text-buttom">
+            Прекрасне місце для навчання дітей! Велика подяка вчителям за їхню
+            терплячість та професіоналізм. Мій син вже другий рік навчається тут
+            і має тільки позитивні враження. Завдяки інноваційним методикам
+            навчання та індивідуальному підходу кожному учневі, він розвивається
+            не лише академічно, а й в сфері соціальних навичок. Раджу цю школу
+            всім батькам, хто шукає якісну освіту для своєї дитини.
+          </p>
+        </li>
+        <li class="reviews-list-item">
+          <h3 class="reviews-title">Максим Іваненко</h3>
+          <p class="reviews-text">батько учениці 7-Б класу</p>
+          <p class="reviews-text-buttom">
+            Моя дочка навчається в школі вже протягом трьох років і я вражений
+            якістю освіти, яку вона отримує тут. Вчителі школи не лише
+            компетентні, але й дуже підтримують кожного учня в їхньому навчанні
+            та особистісному розвитку. Школа активно впроваджує новітні
+            технології в навчальний процес, що допомагає дітям зрозуміти
+            матеріал краще та зацікавленіше. Я дуже задоволений знаннями, які
+            моя дитина отримує тут.
+          </p>
+        </li>
+      </ul>
       </section-reviews>
     </main>
     <footer class="footer">
       <h3 class="footer-title">Giraffe Club</h3>
       <ul class="footer-list">
-        <li class="footer-list-item">Номер телефону:</li>
-        <li class="footer-list-item">Email:</li>
-        <li class="footer-list-item">Адреса:</li>
         <li class="footer-list-item">
+          <p class="footer-list-item-text">Номер телефону:</p>
           <a class="footer-list-item-link" href="">+38 050 843 91 68</a>
         </li>
         <li class="footer-list-item">
+          <p class="footer-list-item-text">Email:</p>
           <a class="footer-list-item-link" href="">info@giraffe.in.ua</a>
         </li>
         <li class="footer-list-item">
+          <p class="footer-list-item-text">Адреса:</p>
           <a class="footer-list-item-link" href=""
             >м. Кропивницький, вул. Соборна, 1а</a
           >
@@ -371,15 +405,22 @@
       </ul>
       <div class="footer-container">
         <p class="footer-text">Соціальні мережі:</p>
-        <a class="footer-link-facebook" href="">
-          <img class="footer-image" src="./image/facebook.svg" alt="facebook" />
-        </a>
-        <a class="footer-link-instagram" href="">
-          <img class="footer-image"
-            src="./image/Instagram.svg"
-            alt="Instagram"
-          />
-        </a>
+        <ul class="footer-media">
+          <a class="footer-media-link" href="">
+            <img
+              class="footer-media-image"
+              src="./image/facebook.svg"
+              alt="facebook"
+            />
+          </a>
+          <a class="footer-media-link" href="">
+            <img
+              class="footer-media-image"
+              src="./image/Instagram.svg"
+              alt="Instagram"
+            />
+          </a>
+        </ul>
       </div>
     </footer>
   </body>
