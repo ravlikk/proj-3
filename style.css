@@ -5,13 +5,8 @@
   font-family: "Zilla Slab", serif;
   text-decoration: none;
 }
-@media (min-width: 1920px) {
-  .container{
-    margin: 0 auto;
-    width: 1920px;
-  }
-}
-.navigation {
+
+.header {
   background: #df803e;
   position: absolute;
   width: 100%;
@@ -20,7 +15,6 @@
 }
 .navigation-list {
   display: flex;
-
   gap: 8px;
   padding: 10px 15px;
 }
@@ -71,7 +65,7 @@
   width: 238px;
   height: 250px;
   top: 30px;
-  right: 0px;
+  right: -18px;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(./image/white-triangle-phone.png);
@@ -108,34 +102,38 @@
   background: #fff;
 }
 @media (min-width: 1920px) {
+  .header {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .header-container {
+    display: flex;
+    gap: 405px;
+  }
   .navigation-list {
     display: inline-flex;
     align-items: flex-start;
     gap: 13px;
-    padding: 40px 405px 19px 108px;
   }
   .navigation-list-item {
     display: flex;
-    padding: 14px 10px;
     align-items: flex-start;
     gap: 10px;
   }
   .navigation-list-item-link {
     color: #000;
     text-align: center;
-    font-size: 26px;
+    font-size: 28px;
     font-style: normal;
     line-height: normal;
+    padding: 10px 14px;
   }
   .list-icon {
-    position: absolute;
     display: flex;
     align-items: center;
     gap: 24px;
     width: 172px;
     z-index: 3;
-    padding-left: 1550px;
-    padding-top: 40px;
   }
   .list-icon-item:first-child {
     padding: 8px;
@@ -184,8 +182,8 @@
     content: "";
     position: absolute;
     width: 1312px;
-    height: 1120px;
-    top: -10px;
+    height: 1312px;
+    top: -80px;
     left: 970px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -285,9 +283,6 @@
     padding-top: 108px;
     padding-bottom: 120px;
   }
-  .about-container {
-    width: 1920px;
-  }
   .about-text {
     position: absolute;
     display: block;
@@ -296,7 +291,6 @@
     font-style: normal;
     line-height: normal;
     padding-left: 125px;
-    padding-top: 114px;
   }
   .about-title {
     color: #000;
@@ -308,7 +302,7 @@
     padding-bottom: 68px;
   }
   .about-list {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     row-gap: 40px;
@@ -514,9 +508,6 @@
     padding-top: 108px;
     padding-bottom: 125px;
   }
-  .Directions-of-work-container {
-    width: 1920px;
-  }
   .Directions-of-work-text {
     display: block;
     color: #fcfcfc;
@@ -525,7 +516,6 @@
     line-height: normal;
     position: absolute;
     padding-left: 133px;
-    padding-top: 114px;
   }
   .Directions-of-work-title {
     color: #000;
@@ -584,9 +574,7 @@
     font-size: 26px;
     font-style: normal;
     line-height: normal;
-    display: inline-flex;
     padding: 20px 40px;
-    align-items: flex-start;
     gap: 10px;
     border-radius: 10px;
     border: 2px solid #000;
@@ -724,14 +712,8 @@
 @media (min-width: 1920px) {
   .teaching {
     padding-top: 215px;
-
     padding-bottom: 120px;
     position: relative;
-  }
-  .teaching-container {
-    position: relative;
-    margin: 0 auto;
-    width: 1920px;
   }
   .teaching-container::after {
     content: "";
@@ -743,17 +725,7 @@
     background-size: cover;
     background-image: url(./image/learning-with-children.webp);
   }
-  .teaching-text {
-    position: absolute;
-    display: block;
-    color: #000;
-    text-align: center;
-    font-size: 26px;
-    font-style: normal;
-    line-height: normal;
-    padding-left: 126px;
-    padding-top: 114px;
-  }
+
   .teaching-title-study {
     color: #000;
     text-align: start;
@@ -797,14 +769,16 @@
     line-height: 130%;
   }
   .teaching-image {
-    display: none;
+    width: 956px;
+    height: 505px;
+    right: 120px;
   }
   .teaching-title-format {
     color: #000;
     font-size: 50px;
     font-style: normal;
     line-height: 130%;
-    padding-top: 187px;
+    padding-top: 0px;
   }
   .teaching-list-format {
     gap: 105px;
@@ -929,6 +903,9 @@
   display: none;
 }
 @media (min-width: 1920px) {
+  .Our-travels {
+    padding-bottom: 120px;
+  }
   .Our-travels-main-text {
     color: #000;
     text-align: center;
@@ -937,12 +914,8 @@
     position: absolute;
     display: block;
     padding-left: 132px;
-    padding-top: 114px;
   }
   .Our-travels-contaier {
-    padding-left: 120px;
-    padding-top: 108px;
-    padding-bottom: 48px;
     width: 1680px;
   }
   .Our-travels-title {
@@ -952,9 +925,8 @@
     font-size: 34px;
   }
   .Our-travels-contaier-grid {
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 120px;
+    padding-top: 48px;
+    justify-content: center;
     display: grid;
     grid-template-columns: 410px 524px 134px 132px 390px;
     grid-template-rows: 392px 85px 289px 196px;
@@ -1112,6 +1084,10 @@
   padding-bottom: 6px;
 }
 @media (min-width: 1920px) {
+  .our-team {
+    padding-top: 108px;
+    padding-bottom: 120px;
+  }
   .our-team-btn-left-image {
     width: 106px;
     height: 106px;
@@ -1120,11 +1096,13 @@
     position: absolute;
     top: 660px;
     left: 110px;
+    width: 106px;
   }
   .our-team-btn-right {
     position: absolute;
     top: 670px;
     left: 1694px;
+    width: 106px;
   }
   .our-team-btn-right-image {
     width: 106px;
@@ -1141,7 +1119,7 @@
     font-size: 26px;
     font-style: normal;
     line-height: normal;
-    padding-top: 114px;
+
     padding-left: 130px;
   }
   .our-team-title {
@@ -1149,9 +1127,12 @@
     padding-bottom: 0px;
   }
   .our-team-list {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
     gap: 32px;
+    margin: 0 auto;
+    width: 1340px;
   }
   .our-team-list-item {
     display: block;
@@ -1306,12 +1287,16 @@
 @media (min-width: 1920px) {
   .reviews {
     position: relative;
+    padding-top: 108px;
+    padding-bottom: 126px;
+    margin: 0 auto;
   }
   .reviews-container {
-    padding: 108px 295px 126px 295px;
+    display: flex;
+    gap: 69px;
+    align-items: center;
   }
   .reviews-text {
-    padding-top: 114px;
     padding-left: 129px;
     display: block;
     position: absolute;
@@ -1324,7 +1309,7 @@
   .reviews-title {
     color: #000;
     font-size: 50px;
-    padding-bottom: 58px;
+    margin-bottom: 58px;
   }
   .reviews-list-item.active {
     display: block;
@@ -1334,6 +1319,7 @@
     width: 1174px;
     padding: 48px 80px 66px 68px;
     margin-bottom: 0px;
+    justify-content: center;
   }
   .reviews-list-item.active > .reviews-list-item-text {
     font-size: 26px;
@@ -1350,43 +1336,48 @@
   .reviews-list-item.active > .reviews-list-item-title {
     font-size: 34px;
     padding-top: 0px;
+    width: 1174px;
   }
 
   .reviews-list-item-text:last-child {
     padding-bottom: 0px;
   }
   .reviews-btn-right {
-    position: absolute;
-    top: 344px;
-    left: 1694px;
     padding: 0;
     border: none;
     font: inherit;
     color: inherit;
     background-color: transparent;
     cursor: pointer;
+    width: 106px;
+    height: 106px;
   }
   .reviews-btn-right-image {
     width: 106px;
     height: 106px;
     display: block;
+    width: 106px;
+    height: 106px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
   }
   .reviews-btn-left-image {
     width: 106px;
     height: 106px;
     display: block;
+  }
+
+  .reviews-btn-left {
+    display: flex;
+    width: 106px;
+    height: 106px;
     padding: 0;
     border: none;
     font: inherit;
     color: inherit;
     background-color: transparent;
     cursor: pointer;
-  }
-
-  .reviews-btn-left {
-    position: absolute;
-    top: 344px;
-    left: 120px;
   }
   .reviews::after {
     display: none;
@@ -1408,9 +1399,7 @@
 .footer {
   background: #df803e;
 }
-.footer-container {
-  padding: 11px 2px 15px 9px;
-}
+
 .footer-title {
   color: #000;
   font-size: 13px;
@@ -1450,10 +1439,9 @@
   display: none;
 }
 @media (min-width: 1920px) {
-  .footer {
-  }
   .footer-container {
-    padding: 112px 120px 127px 125px;
+    padding-top: 112px;
+    padding-bottom: 127px;
     display: flex;
   }
   .footer-title {
@@ -1487,5 +1475,10 @@
   .footer-media-image {
     width: 24px;
     height: 24px;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    width: 1680px;
   }
 }
