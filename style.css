@@ -1281,9 +1281,7 @@
   border-bottom: 0px;
   border-top: 2px solid #fff;
 }
-.reviews-list-item:last-child {
-  margin-bottom: 48px;
-}
+
 @media (min-width: 1920px) {
   .reviews {
     position: relative;
